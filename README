@@ -1,0 +1,4 @@
+```
+./run.alpine alpine 300000 | sort | uniq -c | sort -n -r |head -20
+```
+

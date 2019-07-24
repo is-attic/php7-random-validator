@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker build --net=host --rm -f docker.alpine -t is/php7-alpine:3.7 .

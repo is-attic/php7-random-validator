@@ -1,0 +1,8 @@
+#!/bin/sh
+
+docker run --net=host \
+ -it --rm --name=apline0 \
+ --volume $(pwd)/s:/s \
+ --entrypoint=/usr/bin/php \
+ is/php7-alpine:3.7 \
+ /s/run.php "$@"
